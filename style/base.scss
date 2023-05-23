@@ -1,0 +1,14 @@
+*, *::after,*::before{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+    color: $blake_color;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}

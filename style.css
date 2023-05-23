@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Roboto+Mono:wght@400;600&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+  color: #000000;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.header {
+  background: #0E77AF;
+}
+.header__top .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 38px;
+}
+.header__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+}
+.header__icon {
+  fill: #ffffff;
+  cursor: pointer;
+}
+.header__mail a {
+  color: #ffffff;
+  font-size: 12px;
+}
+.header__content {
+  background: #ffffff;
+}
+.header__content .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 120px;
+}
+.header__logo {
+  width: 10%;
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+.header__linc {
+  color: #000000;
+  font-size: 14px;
+}
+.header__linc:hover {
+  font-weight: 700;
+}
+.header__tel {
+  width: 18%;
+}
+.header__tel a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__tel a p {
+  font-size: 16px;
+  color: #000000;
+}
+.header__tel a p span {
+  font-size: 14px;
+  color: #7D7D7D;
+}
