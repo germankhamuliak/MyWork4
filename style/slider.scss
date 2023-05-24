@@ -1,0 +1,64 @@
+.slider {
+    position: relative;
+    &__slid {
+        position: relative;
+        img{
+            width: 100%;
+        }
+    }
+    &__info {
+        position: absolute;
+        top:25%;
+        left: 50%;
+        max-width: 580px;
+    }
+    &__sub-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-weight: $fat;
+        font-size: 84px;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 60px;
+    }
+    button{
+        width: 50%;
+        max-width: 284px;
+        height: 74px;
+        font-size: 24px;
+        padding: 25px 0;
+    }
+    &::before{
+        content: "";
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-right: 3px solid $slider_arrow_color;
+        border-top: 3px solid $slider_arrow_color;
+        transform: rotate(225deg);
+        position: absolute;
+        top: calc(50% - 15px);
+        left: 50px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    &::after{
+        content: "";
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-right: 3px solid $slider_arrow_color;
+        border-top: 3px solid $slider_arrow_color;
+        transform: rotate(45deg);
+        position: absolute;
+        top: calc(50% - 15px);
+        right: 50px;
+        z-index: 1;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,61 @@
+.info1 {
+    margin: 85px 0 135px;
+    & .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__about-us {
+        width: 65%;
+        img{
+            width: 100%;
+            margin-top: 56px;
+        }
+        p{
+            font-size: 16px;
+            color: $blake_color;
+            line-height: 29px;
+            &:first-of-type{
+            margin-top: 40px;
+            margin-bottom: 50px;
+            }
+        }    
+    }
+    &__why-us {
+        width: 30%;
+    }
+    &__resons{
+        margin-top: 56px;
+    }
+    &__reson {
+        padding: 45px 30px 44px 37px;
+        background: $base_bg_color;
+        position: relative;
+        &:hover{
+            background: $hov_bg_color;
+        }
+        &-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 17px; 
+        }
+        &-title {
+            font-size: 24px;
+            font-weight: $fat;
+            color: $base_color;
+        }
+        &-text {
+            font-size: 16px;
+            color: $blake_color;
+            margin-bottom: 13px;
+            line-height: 25px;
+        }
+        &-linc {
+            font-size: 12px;
+            font-weight: $fat;
+            color: $call_us_color;
+            cursor: pointer;
+        }
+    }
+    
+}

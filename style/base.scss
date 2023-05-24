@@ -12,3 +12,20 @@
     max-width: 1200px;
     padding: 0 15px;
 }
+.title {
+    font-size: 32px;
+    font-weight: $fat;
+    color: $blake_color;
+}
+.sub-title{
+    font-size: 24px;
+    color: $sub-title_color;
+}
+.button{
+    background: $button_normal_bg;
+    color: $white_color;
+    font-weight: $fat;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}

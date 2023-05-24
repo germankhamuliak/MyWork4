@@ -1,0 +1,53 @@
+.info2 {
+    display: flex;
+    &__lincs-side {
+        width: 53%;
+        position: relative;
+        background: url(/images/info2/1.png) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: end;
+        padding: 87px 0;
+    }
+    &__lincs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        row-gap: 21px;
+    }
+    &__linc {
+        font-size: 22px;
+        font-weight: $fat;
+        padding: 35px 40px 35px 34px;
+        color: $white_color;
+        background: $linc_normal_bg;
+        cursor: pointer;
+        &:hover{
+            background: $linc_activ_bg;
+            color: $blake_color;
+        }
+    }
+    &__info-side {
+        width: 47%;
+        background: $base_bg_color;
+        padding: 77px 0 63px 65px;
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__sub-title {
+        margin-bottom: 38px;
+    }
+    &__list {
+        margin-bottom: 32px;
+        li{
+            font-size: 16px;
+            line-height: 29px;
+        }
+    }
+    button{
+        font-size: 12px;
+        padding: 13px 19px;
+    }
+}
+
