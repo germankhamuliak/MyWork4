@@ -1,0 +1,51 @@
+.connections {
+    margin-top: 125px;
+    margin-bottom: 228px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 50%;
+        padding-top: 54px;
+    }
+    &__card {
+        margin-bottom: 30px;
+        .title {
+            margin-bottom: 9px;
+        }
+        .sub-title {
+            margin-bottom: 24px;
+        }
+        p{
+            line-height: 29px;
+            margin-bottom: 30px;
+        }
+    }
+    &__right {
+        width: 40%;
+        form{
+            padding: 54px 38px 52px 48px;
+            background: $base_bg_color;
+            position: relative;
+            text-align: right;
+            .title {
+                text-align: left;
+                margin-bottom: 46px;
+            }
+            input{
+                height: 53px;
+                width: 100%;
+                background: $white_color;
+                padding: 19px 0 18px 13px;
+                margin-bottom: 37px;
+                border: 2px solid $border_color;
+            }
+            button{
+                font-size: 12px;
+                padding: 12px 30px;
+            }
+        }
+
+    }
+}
