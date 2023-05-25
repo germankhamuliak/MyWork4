@@ -1,0 +1,58 @@
+.testimonials {
+    padding: 150px 0 140px;
+    background: $base_color;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        h2{
+            color: $white_color;
+            font-size: 32px;
+            font-weight: $fat;
+            margin-bottom: 10px;
+        }
+        p{
+            color: $white_color;
+            font-size: 24px;
+            &:first-of-type{
+                margin-bottom: 92px;
+            }
+            &.testimonials__percent{
+                font-size: 64px;
+            }    
+        }     
+    }
+    &__btns {
+        margin-top: 56px;
+        color: $white_color;
+        font-size: 28px;
+    }
+    button{
+        background: $base_color;
+        border: none;
+        color: $white_color;
+        cursor: pointer;
+        font-size: 28px;
+    }
+    &__right {
+        width: 62%;
+        background: $white_color;
+        padding: 75px 45px 82px 60px;
+        p{
+            color: $blake_color;
+            font-size: 16px;
+            line-height: 29px;
+            &:first-of-type{
+                font-size: 20px;
+                font-weight: $fat;
+                margin-bottom: 13px;
+            }
+            &:last-of-type{
+                margin-top: 54px;
+                font-weight: $fat;
+            }
+        }
+        
+    }
+}

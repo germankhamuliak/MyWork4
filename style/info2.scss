@@ -1,5 +1,6 @@
 .info2 {
     display: flex;
+    margin-bottom: 130px;
     &__lincs-side {
         width: 53%;
         position: relative;
@@ -51,3 +52,7 @@
     }
 }
 
+.ative-linc{
+    background: $linc_activ_bg;
+    color: $blake_color;
+}
