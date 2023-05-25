@@ -231,7 +231,7 @@
 .info2__lincs-side {
   width: 53%;
   position: relative;
-  background: url(../images/info2/1.png) no-repeat center;
+  background: url(./images/info2/1.png) no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: end;
