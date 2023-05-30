@@ -1,9 +1,9 @@
 .footer {
     background: $footer_bg_color;
-    .footer__conections {
+    &__conections {
         display: flex;
     }
-    .footer__card {
+    &__card {
         width: 33%;
         padding: 40px 67px;
         position: relative;
@@ -33,11 +33,11 @@
             left: 16px;
         }
     }
-    .footer__content {
+    &__content {
         display: flex;
         justify-content: space-between;
     }
-    .footer__info {
+    &__info {
         width: 30%;
         h2{
             color: $white_color;
@@ -51,7 +51,7 @@
             list-style: none;
         }
     }
-    .footer__svg {
+    &__svg {
         fill:$white_color;
         width: 40px;
         height: 40px;
@@ -65,5 +65,64 @@
     padding: 42px 0;
     .container{
         color: $white_color;
+    }
+}
+
+@media (width <= 768px) {
+    .footer {
+        background: $footer_bg_color;
+        padding-top: 30px;
+        &__conections {
+            display: block;
+            margin-bottom: 30px;
+        }
+        &__card {
+            width: 100%;
+            padding: 40px 67px;
+            top: 0;
+        }
+        &__content {
+            display: block;
+        }
+        &__info {
+            width: 100%;
+            text-align: center;
+            h2{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+            p,a,li,svg{
+                height: 0;
+                visibility: hidden;
+                opacity: 0;
+                transition: .3s;
+            }
+            &:hover{
+                p,a,li,svg{
+                    visibility: visible;
+                    opacity: 1;
+                }
+                p{
+                    height: 100px;
+                }
+                li{
+                    height: 25px; 
+                }
+                svg{
+                    height: 40px;
+                }
+            }
+        }
+        &__svg {
+            margin-right: 0;
+            margin: 0 10px;
+        }
+    }
+    
+    .sub-footer{
+        margin-top: 0;
+        padding: 20px 0;
+        text-align: center;
     }
 }

@@ -56,3 +56,57 @@
         
     }
 }
+
+
+@media (width <= 768px) {
+    .testimonials {
+        padding: 40px 0 35px;
+        .container {
+            display: block;
+        }
+        &__left {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            div{
+                padding: 5px;
+                text-align: center;
+            }
+            h2{
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+            p{
+                color: $white_color;
+                font-size: 16px;
+                &:first-of-type{
+                    margin-bottom: 0px;
+                }
+                &.testimonials__percent{
+                    font-size: 32px;
+                }    
+            }     
+        }
+        &__btns {
+            margin-top: 0;
+            color: $white_color;
+            font-size: 28px;
+        }
+        &__right {
+            width: 100%;
+            padding: 35px 20px 40px 30px;
+            p{
+                line-height: 29px;
+                &:first-of-type{
+                    margin-bottom: 5px;
+                }
+                &:last-of-type{
+                    margin-top: 10px;
+                }
+            }
+            
+        }
+    }
+}

@@ -29,6 +29,7 @@
     text-align: center;
     border: 1px solid $button_normal_bg;
     cursor: pointer;
+    transition: .3s;
     &:hover{
         background: $button_hover_bg;
         border: 1px solid $button_hover_bg;
@@ -38,4 +39,23 @@
         border: 1px solid $button_normal_bg;
         box-shadow: inset 0 0 10px $button_normal_bg;
     }
+}
+
+
+@media (width <= 1400px) { 
+    
+}
+
+@media (width <= 1200px) {
+
+}
+@media (width <= 992px) {
+
+}
+
+@media (width <= 768px) {
+
+}
+@media (width <= 576px) {
+
 }
