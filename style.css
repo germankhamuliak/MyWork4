@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Asap", sans-serif;
   color: #000000;
+  transition: 0.3s;
 }
 
 .container {
@@ -109,28 +110,6 @@
   color: #7D7D7D;
 }
 
-@media (width <= 1200px) {
-  .header__top {
-    display: none;
-  }
-  .header__content .container {
-    height: 100px;
-  }
-  .header__logo {
-    width: 10%;
-  }
-  .header__tel {
-    width: 19.5%;
-  }
-  .header__tel a p {
-    font-size: 14px;
-    color: #000000;
-  }
-  .header__tel a p span {
-    font-size: 12px;
-    color: #7D7D7D;
-  }
-}
 .burger-menu {
   width: 30px;
   height: 30px;
@@ -138,6 +117,9 @@
   display: none;
   align-items: center;
   cursor: pointer;
+}
+.burger-menu:hover {
+  transition: 0.5s;
 }
 .burger-menu:hover hr {
   transform: rotate(45deg);
@@ -226,6 +208,28 @@
   padding: 5px;
 }
 
+@media (width <= 1200px) {
+  .header__top {
+    display: none;
+  }
+  .header__content .container {
+    height: 100px;
+  }
+  .header__logo {
+    width: 10%;
+  }
+  .header__tel {
+    width: 19.5%;
+  }
+  .header__tel a p {
+    font-size: 14px;
+    color: #000000;
+  }
+  .header__tel a p span {
+    font-size: 12px;
+    color: #7D7D7D;
+  }
+}
 @media (width <= 992px) {
   .header__content .container {
     height: 100px;
@@ -244,10 +248,17 @@
   }
 }
 .slider {
+  width: 100%;
   position: relative;
+  display: flex;
+  overflow: hidden;
 }
 .slider__slid {
+  transform: translateX(0);
+  transition: 0.6s ease;
+  min-width: 100%;
   position: relative;
+  left: 0;
 }
 .slider__slid img {
   width: 100%;
@@ -279,33 +290,23 @@
   font-size: 24px;
   padding: 25px 0;
 }
-.slider::before {
-  content: "";
-  display: block;
+.slider .prev, .slider .next {
   height: 30px;
   width: 30px;
   border-right: 3px solid rgba(0, 0, 0, 0.5019607843);
   border-top: 3px solid rgba(0, 0, 0, 0.5019607843);
-  transform: rotate(225deg);
   position: absolute;
   top: calc(50% - 15px);
-  left: 50px;
   z-index: 1;
   cursor: pointer;
 }
-.slider::after {
-  content: "";
-  display: block;
-  height: 30px;
-  width: 30px;
-  border-right: 3px solid rgba(0, 0, 0, 0.5019607843);
-  border-top: 3px solid rgba(0, 0, 0, 0.5019607843);
-  transform: rotate(45deg);
-  position: absolute;
-  top: calc(50% - 15px);
+.slider .prev {
+  left: 50px;
+  transform: rotate(225deg);
+}
+.slider .next {
   right: 50px;
-  z-index: 1;
-  cursor: pointer;
+  transform: rotate(45deg);
 }
 
 @media (width <= 1400px) {
@@ -561,8 +562,12 @@
 }
 @media (width <= 576px) {
   .info2__linc {
+    display: flex;
     font-size: 10px;
     padding: 8px 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 .info3 {

@@ -103,8 +103,12 @@
 @media (width <= 576px) {
     .info2 {
         &__linc {
+            display: flex;
             font-size: 10px;
             padding: 8px 3px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
     }
 }

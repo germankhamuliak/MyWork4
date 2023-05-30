@@ -1,7 +1,14 @@
 .slider {
+    width: 100%;
     position: relative;
+    display: flex;
+    overflow: hidden;
     &__slid {
+        transform: translateX(0);
+        transition: .6s ease;
+        min-width: 100%;
         position: relative;
+        left: 0;
         img{
             width: 100%;
         }
@@ -33,34 +40,25 @@
         font-size: 24px;
         padding: 25px 0;
     }
-    &::before{
-        content: "";
-        display: block;
+    .prev,.next{
         height: 30px;
         width: 30px;
         border-right: 3px solid $slider_arrow_color;
         border-top: 3px solid $slider_arrow_color;
-        transform: rotate(225deg);
         position: absolute;
         top: calc(50% - 15px);
+        z-index: 1;
+        cursor: pointer;
+    }
+    .prev{
         left: 50px;
-        z-index: 1;
-        cursor: pointer;
+        transform: rotate(225deg);
     }
-    &::after{
-        content: "";
-        display: block;
-        height: 30px;
-        width: 30px;
-        border-right: 3px solid $slider_arrow_color;
-        border-top: 3px solid $slider_arrow_color;
-        transform: rotate(45deg);
-        position: absolute;
-        top: calc(50% - 15px);
+    .next{
         right: 50px;
-        z-index: 1;
-        cursor: pointer;
+        transform: rotate(45deg);
     }
+    
 }
 
 
