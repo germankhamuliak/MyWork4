@@ -118,28 +118,6 @@
   align-items: center;
   cursor: pointer;
 }
-.burger-menu:hover {
-  transition: 0.5s;
-}
-.burger-menu:hover hr {
-  transform: rotate(45deg);
-}
-.burger-menu:hover::before {
-  transform: rotate(45deg);
-  top: 12.5px;
-}
-.burger-menu:hover::after {
-  transform: rotate(-45deg);
-  bottom: 12.5px;
-}
-.burger-menu:hover .burger-list {
-  opacity: 1;
-  visibility: visible;
-  height: auto;
-}
-.burger-menu:hover .burger-list a {
-  padding: 5px;
-}
 .burger-menu hr {
   height: 5px;
   width: 100%;
