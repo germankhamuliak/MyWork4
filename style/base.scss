@@ -7,7 +7,9 @@
     color: $blake_color;
     transition: .5s;
 }
-
+html{
+    scroll-behavior: smooth; 
+  }
 .container{
     margin: 0 auto;
     max-width: 1200px;
