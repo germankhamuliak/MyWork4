@@ -27,11 +27,20 @@
             background: $linc_activ_bg;
             color: $blake_color;
         }
+        z-index: 1;
     }
     &__info-side {
         width: 47%;
         background: $base_bg_color;
+        position: relative;
+    }
+    &__tab-content{
+        opacity: 0;
+        visibility: hidden;
         padding: 77px 0 63px 65px;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     &__title {
         margin-bottom: 10px;
@@ -55,6 +64,11 @@
 .ative-linc{
     background: $linc_activ_bg;
     color: $blake_color;
+}
+.active-content{
+    opacity: 1;
+    visibility: visible;
+    position: relative;
 }
 
 @media (width <= 992px) {
@@ -83,10 +97,13 @@
                 background: $base_bg_color;
             }
         }
+
         &__info-side {
             width: 100%;
             background: $base_bg_color;
-            padding: 30px 30px;
+        }
+        &__tab-content{
+            padding: 30px 20px;
         }
         &__sub-title {
             margin-bottom: 15px;

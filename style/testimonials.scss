@@ -38,8 +38,18 @@
     &__right {
         width: 62%;
         background: $white_color;
+        display: flex;
+        overflow: hidden;
+    }    
+    &__card{
+        transform: translateX(0);
+        transition: 0.6s ease;
+        min-width: 100%;
+        position: relative;
+        left: 0;
+        width: 100%;
         padding: 75px 45px 82px 60px;
-        p{
+       p{
             color: $blake_color;
             font-size: 16px;
             line-height: 29px;
@@ -52,9 +62,11 @@
                 margin-top: 54px;
                 font-weight: $fat;
             }
-        }
-        
+        } 
     }
+        
+        
+    
 }
 
 
@@ -95,7 +107,9 @@
             font-size: 28px;
         }
         &__right {
-            width: 100%;
+            width: 100%;    
+        }    
+        &__card{
             padding: 35px 20px 40px 30px;
             p{
                 line-height: 29px;
@@ -106,7 +120,7 @@
                     margin-top: 10px;
                 }
             }
-            
-        }
+        }    
+        
     }
 }
