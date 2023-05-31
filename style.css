@@ -558,7 +558,7 @@
 @media (width <= 576px) {
   .info2__linc {
     display: flex;
-    font-size: 10px;
+    font-size: 11px;
     padding: 8px 3px;
     justify-content: center;
     align-items: center;
@@ -1020,22 +1020,22 @@
     opacity: 0;
     transition: 0.3s;
   }
-  .footer__info:hover p, .footer__info:hover a, .footer__info:hover li, .footer__info:hover svg {
-    visibility: visible;
-    opacity: 1;
-  }
-  .footer__info:hover p {
-    height: 100px;
-  }
-  .footer__info:hover li {
-    height: 25px;
-  }
-  .footer__info:hover svg {
-    height: 40px;
-  }
   .footer__svg {
     margin-right: 0;
     margin: 0 10px;
+  }
+  .info-active p, .info-active a, .info-active li, .info-active svg {
+    visibility: visible;
+    opacity: 1;
+  }
+  .info-active p {
+    height: 100px;
+  }
+  .info-active li {
+    height: 25px;
+  }
+  .info-active svg {
+    height: 40px;
   }
   .sub-footer {
     margin-top: 0;
