@@ -490,7 +490,7 @@ header.active .burger::after {
     flex-direction: column;
     justify-content: space-around;
     width: 53%;
-    background: url(../images/1.png) no-repeat center;
+    background: url(./images/1.png) no-repeat center;
     background-size: cover;
     row-gap: 20px;
     padding: 85px 0;
